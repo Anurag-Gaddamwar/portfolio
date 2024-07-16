@@ -4,7 +4,6 @@ import { FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Image from 'next/image';
 
 interface CarouselItem {
   image: string;
@@ -105,7 +104,7 @@ export const BentoGridItem = ({
               {title}
             </div>
           </div>
-          {image && <Image src={image} alt={`${title} logo`} className="w-10 h-10 rounded-full" />}
+          {image && <img src={image} alt={`${title} logo`} className="w-10 h-10 rounded-full" />}
         </div>
         <div className="font-mono ml-2 font-normal text-neutral-600 text-sm dark:text-neutral-300">
           {description}
@@ -117,7 +116,7 @@ export const BentoGridItem = ({
     <Carousel showArrows={true} showThumbs={false}> 
       {carouselItems.map((item, index) => (
         <div key={index}>
-          <Image style={{ width: '100%'}} src={item.image} alt={`Image ${index + 1}`} />
+          <img style={{ width: '100%'}} src={item.image} alt={`Image ${index + 1}`} />
           {/* <p className="legend hidden  sm:block">{item.caption}</p> */}
         </div>
       ))}
@@ -143,13 +142,14 @@ export const BentoGridItem = ({
               layout
               className="bg-black border-[0.01px] dark:bg-gray-800 rounded-lg p-8 w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 relative"
             >
-              <button onClick={togglePopup}
+              <button
+                onClick={togglePopup}
                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-300 dark:hover:text-gray-100"
               >
                 <FaTimes />
               </button>
               <div className="flex flex-col items-center">
-                {image && <Image src={image} alt={`${title} image`} className="mb-4 rounded-lg w-20" />}
+                {image && <img src={image} alt={`${title} image`} className="mb-4 rounded-lg w-20" />}
                 <h2 className="text-2xl font-bold mb-4 text-white">{title}</h2>
                 <div className="text-sm text-slate-400">{detailedDescription}</div>
               </div>

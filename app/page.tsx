@@ -7,8 +7,6 @@ import About from "./components/about-me";
 import Skills from "./components/skills";
 import { BentoGrid, BentoGridItem } from "./components/ui/project-grid";
 import Footer from "./components/Footer";
-import Image from 'next/image';
-
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const [aboutHeight, setAboutHeight] = useState<number>(0);
@@ -22,24 +20,25 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center relative">
-      <div className="rounded-xl w-full sm:text-5xl tracking-widest font-mono text-4xl sm:h-32 z-10 items-center justify-center relative">
-        <AuroraBackground>ANURAG GADDAMWAR
-        {typeof window !== 'undefined' && (
-        <Image 
-          src="/AnuragPhoto.png" 
-          alt="Anurag Gaddamwar" 
-          className="block sm:hidden h-32 max-w-full object-cover absolute top-1/2 transform -translate-y-1/2 right-4" 
-          style={{ display: window.innerWidth <= 400 ? 'block' : 'none' }}
-        />
-        )}
-        </AuroraBackground>
-        {/* Photo for small screens */}
-        
-      </div>
+<div className="rounded-xl w-full sm:text-5xl tracking-widest font-mono text-4xl sm:h-32 z-10 items-center justify-center relative">
+  <AuroraBackground>
+    ANURAG GADDAMWAR
+    {typeof window !== 'undefined' && (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img 
+        src="/AnuragPhoto.png" 
+        alt="Anurag Gaddamwar" 
+        className="block sm:hidden h-32 max-w-full object-cover absolute top-[5.19rem] transform -translate-y-1/2 right-4" 
+        style={{ display: window.innerWidth <= 400 ? 'block' : 'none' }}
+      />
+    )}
+  </AuroraBackground>
+</div>
+
       <TextRevealCard text="Web Developer" revealText="Web Designer" />
       <div className="mt-8">
         <TracingBeam {...{ svgHeight: aboutHeight }}>
-          <About/>
+          <About />
           <Skills />
           <h1 className="text-sky-300 font-mono tracking-widest mt-10 text-2xl md:text-3xl mx-10 mb-10">Projects</h1>
           <BentoGrid>
@@ -66,7 +65,7 @@ export default function Home() {
                   <p className="text-sm text-justify">
                   Cypher AI is a platform where job seekers can enhance their interview preparation and resume quality by receiving personalized feedback and guidance. The platform integrates the Gemini API to implement an interactive chatbot that provides responses and guidance for technical and interpersonal interview questions. Additionally, Cypher AI includes a resume analysis feature that accepts job roles and resumes in PDF or image format. This feature extracts text from uploaded documents and evaluates resumes against specific job roles, offering detailed feedback such as ATS compatibility scores, structure analysis, and content relevance scores.
                   <br/><br/>As a result, Cypher AI empowers job seekers with tailored interview practice and resume enhancement suggestions, significantly increasing their chances of success in the job application process. 
-                  <br/><br/><span className="font-semibold">Tech Stack:</span> Next.js, React.js, OCR, Express.js, react-markdown, WebKitSpeech API, Node.js, MongoDB, Gemini API.
+                  <br/><br/><span className="font-semibold">Tech Stack:</span> Next.js, React.js, react-markdown, WebKitSpeech API, OCR, Express.js, Node.js, MongoDB, Gemini API.
                   </p>
                 </>
               }
@@ -104,6 +103,8 @@ export default function Home() {
             />
           </BentoGrid>
         </TracingBeam>
+        
+
       </div>
       <Footer />
     </main>
