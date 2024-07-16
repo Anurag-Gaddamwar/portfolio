@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\components\ui\project-grid.tsx
 import { cn } from "@/app/utils/cn";
 import React, { useState, useEffect, useRef } from 'react';
 import { FaTimes } from 'react-icons/fa';
@@ -19,16 +20,16 @@ export const BentoGrid = ({
 }) => {
   return (
     <div
-    className={cn(
-      "md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto cursor-pointer row-span-1 ml-10 mr-8 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-      className
-    )}
-    
+      className={cn(
+        "md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto cursor-pointer row-span-1 ml-10 mr-8 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        className
+      )}
     >
       {children}
     </div>
   );
 };
+
 
 export const BentoGridItem = ({
   className,

@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-black">
+    <html lang="en" className="bg-black relative">
       <body className={inter.className} >{children}</body>
     </html>
   );

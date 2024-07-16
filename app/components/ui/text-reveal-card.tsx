@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\components\ui\text-reveal-card.tsx
 import React, { useEffect, useRef, useState, memo } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
@@ -125,15 +126,15 @@ export const TextRevealCard = ({
       </div>
 
       {/* Icons section */}
-<div className="flex justify-center sm:mt-4 space-x-4">
+<div className="flex justify-center sm:my-[-30px] my-[-45px] space-x-4">
   <a href="https://www.linkedin.com/in/anurag-gaddamwar/" title= "LinkedIn" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin size="2x" className="text-white w-4 hover:text-[#0e76a8]" /> 
+    <FaLinkedin size="100" className="text-white w-4 hover:text-[#0e76a8]" /> 
   </a>
   <a href="https://github.com/Anurag-Gaddamwar" title= "GitHub" target="_blank" rel="noopener noreferrer">
-    <FaGithub size="2x" className="text-white w-4 hover:text-[#4d4c4c]" /> 
+    <FaGithub size="100" className="text-white w-4 hover:text-[#4d4c4c]" /> 
   </a>
   <a href="/AnuragGaddamwar_Profile.pdf" title= "Resume" download="Anurag_Gaddamwar_Resume.pdf">
-    <FaFilePdf size="2x" className="text-white w-4 hover:text-red-500" />
+    <FaFilePdf size="100" className="text-white w-4 hover:text-red-500" />
   </a>
 </div>
 

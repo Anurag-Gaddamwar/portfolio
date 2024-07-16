@@ -1,4 +1,4 @@
-
+// D:\PROJECTS\Portfolio\portfolio\app\components\ui\aurora-background.tsx
 import { cn } from "@/app/utils/cn";
 import React, { ReactNode } from "react";
 import { HTMLMotionProps, motion } from 'framer-motion'; // Import framer-motion

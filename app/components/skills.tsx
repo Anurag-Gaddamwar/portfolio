@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\components\skills.tsx
 import React, { ReactNode, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { FaJava, FaAws, FaGithub } from "react-icons/fa";

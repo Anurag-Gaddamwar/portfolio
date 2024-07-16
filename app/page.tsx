@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\page.tsx
 'use client';
 import React, { useRef, useEffect, useState } from "react";
 import { TracingBeam } from "./components/ui/tracing-beam"; 
@@ -8,6 +9,7 @@ import Skills from "./components/skills";
 import { BentoGrid, BentoGridItem } from "./components/ui/project-grid";
 import Footer from "./components/Footer";
 export default function Home() {
+  
   const aboutRef = useRef<HTMLDivElement>(null);
   const [aboutHeight, setAboutHeight] = useState<number>(0);
 
@@ -28,7 +30,7 @@ export default function Home() {
       <img 
         src="/AnuragPhoto.png" 
         alt="Anurag Gaddamwar" 
-        className="block sm:hidden h-32 max-w-full object-cover absolute top-[5.19rem] transform -translate-y-1/2 right-4" 
+        className=" md :hidden lg:hidden block sm:hidden h-32 max-w-full object-cover absolute top-[5.19rem] transform -translate-y-1/2 right-4" 
         style={{ display: window.innerWidth <= 400 ? 'block' : 'none' }}
       />
     )}

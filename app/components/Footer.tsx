@@ -1,3 +1,4 @@
+// D:\PROJECTS\Portfolio\portfolio\app\components\Footer.tsx
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
