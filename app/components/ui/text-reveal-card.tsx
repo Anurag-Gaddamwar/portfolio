@@ -126,13 +126,13 @@ export const TextRevealCard = ({
 
       {/* Icons section */}
 <div className="flex justify-center mt-4 space-x-4">
-  <a href="https://www.linkedin.com/in/anurag-gaddamwar/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/anurag-gaddamwar/" title= "LinkedIn" target="_blank" rel="noopener noreferrer">
     <FaLinkedin size="2x" className="text-white w-4 hover:text-[#0e76a8]" /> 
   </a>
-  <a href="https://github.com/Anurag-Gaddamwar" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Anurag-Gaddamwar" title= "GitHub" target="_blank" rel="noopener noreferrer">
     <FaGithub size="2x" className="text-white w-4 hover:text-[#4d4c4c]" /> 
   </a>
-  <a href="/AnuragGaddamwar_Profile.pdf" download="Anurag_Gaddamwar_Resume.pdf">
+  <a href="/AnuragGaddamwar_Profile.pdf" title= "Resume" download="Anurag_Gaddamwar_Resume.pdf">
     <FaFilePdf size="2x" className="text-white w-4 hover:text-red-500" />
   </a>
 </div>

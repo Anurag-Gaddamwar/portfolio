@@ -7,6 +7,7 @@ import About from "./components/about-me";
 import Skills from "./components/skills";
 import { BentoGrid, BentoGridItem } from "./components/ui/project-grid";
 import Footer from "./components/Footer";
+import Image from 'next/image';
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -23,13 +24,14 @@ export default function Home() {
     <main className="flex min-h-screen w-full flex-col items-center relative">
       <div className="rounded-xl w-full sm:text-5xl tracking-widest font-mono text-4xl sm:h-32 z-10 items-center justify-center relative">
         <AuroraBackground>ANURAG GADDAMWAR
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img 
+        {typeof window !== 'undefined' && (
+        <Image 
           src="/AnuragPhoto.png" 
           alt="Anurag Gaddamwar" 
           className="block sm:hidden h-32 max-w-full object-cover absolute top-1/2 transform -translate-y-1/2 right-4" 
           style={{ display: window.innerWidth <= 400 ? 'block' : 'none' }}
         />
+        )}
         </AuroraBackground>
         {/* Photo for small screens */}
         
