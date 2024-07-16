@@ -22,7 +22,7 @@ const AboutSkills = () => (
   <ul className="list-disc list-inside text-gray-400 text-sm mt-4">
     <li key="frontend">Creating intuitive interfaces with React and Next.js</li>
     <li key="design">Bringing designs to life with Figma and Illustrator</li>
-    <li key="cloud">Exploring the cloud with AWS</li>
+    {/* <li key="cloud">Exploring the cloud with AWS</li> */}
     <li key="backend">Building backend solutions with Express and Node.js</li>
   </ul>
 );

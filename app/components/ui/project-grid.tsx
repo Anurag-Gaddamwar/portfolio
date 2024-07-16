@@ -142,8 +142,7 @@ export const BentoGridItem = ({
               layout
               className="bg-black border-[0.01px] dark:bg-gray-800 rounded-lg p-8 w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 relative"
             >
-              <button
-                onClick={togglePopup}
+              <button onClick={togglePopup}
                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-300 dark:hover:text-gray-100"
               >
                 <FaTimes />
