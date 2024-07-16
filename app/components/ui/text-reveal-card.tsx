@@ -126,7 +126,7 @@ export const TextRevealCard = ({
       </div>
 
       {/* Icons section */}
-<div className="flex justify-center sm:my-[-30px] my-[-45px] space-x-4">
+<div className="flex justify-center sm:my-[-30px] my-[-40px] space-x-4">
   <a href="https://www.linkedin.com/in/anurag-gaddamwar/" title= "LinkedIn" target="_blank" rel="noopener noreferrer">
     <FaLinkedin size="100" className="text-white w-4 hover:text-[#0e76a8]" /> 
   </a>
