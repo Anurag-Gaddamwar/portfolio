@@ -105,6 +105,7 @@ export const BentoGridItem = ({
               {title}
             </div>
           </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           {image && <img src={image} alt={`${title} logo`} className="w-10 h-10 rounded-full" />}
         </div>
         <div className="font-mono ml-2 font-normal text-neutral-600 text-sm dark:text-neutral-300">
@@ -117,6 +118,7 @@ export const BentoGridItem = ({
     <Carousel showArrows={true} showThumbs={false}> 
       {carouselItems.map((item, index) => (
         <div key={index}>
+           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img style={{ width: '100%'}} src={item.image} alt={`Image ${index + 1}`} />
           {/* <p className="legend hidden  sm:block">{item.caption}</p> */}
         </div>
@@ -150,6 +152,7 @@ export const BentoGridItem = ({
                 <FaTimes />
               </button>
               <div className="flex flex-col items-center">
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
                 {image && <img src={image} alt={`${title} image`} className="mb-4 rounded-lg w-20" />}
                 <h2 className="text-2xl font-bold mb-4 text-white">{title}</h2>
                 <div className="text-sm text-slate-400">{detailedDescription}</div>

@@ -61,6 +61,7 @@ export default function Home() {
             />
             <BentoGridItem 
               title="CYPHER AI" 
+              
               description="AI-Powered Interview and Resume Preparation Platform" 
               detailedDescription={
                 <>
@@ -68,6 +69,10 @@ export default function Home() {
                   Cypher AI is a platform where job seekers can enhance their interview preparation and resume quality by receiving personalized feedback and guidance. The platform integrates the Gemini API to implement an interactive chatbot that provides responses and guidance for technical and interpersonal interview questions. Additionally, Cypher AI includes a resume analysis feature that accepts job roles and resumes in PDF or image format. This feature extracts text from uploaded documents and evaluates resumes against specific job roles, offering detailed feedback such as ATS compatibility scores, structure analysis, and content relevance scores.
                   <br/><br/>As a result, Cypher AI empowers job seekers with tailored interview practice and resume enhancement suggestions, significantly increasing their chances of success in the job application process. 
                   <br/><br/><span className="font-semibold">Tech Stack:</span> Next.js, React.js, react-markdown, WebKitSpeech API, OCR, Express.js, Node.js, MongoDB, Gemini API.
+                  <br/><br/>
+                  <a href="https://cypher-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 duration-200 transition">
+                   Visit Cypher AI
+                  </a>
                   </p>
                 </>
               }
@@ -75,9 +80,11 @@ export default function Home() {
               image="cypher.png"
               carouselItems={[ 
                 { image: "c1.png", caption: "Interview Assistant" },
-                { image: "c2.png", caption: "Resume Analyzer" },
-                { image: "c3.png", caption: "Resume Analysis Report" },
-                { image: "c4.png", caption: "Resume Analysis Report" },
+                { image: "c2.png", caption: "Bot" },
+                { image: "c3.png", caption: "Bot" },
+                { image: "c4.png", caption: "Resume Analysis" },
+                { image: "c5.png", caption: "Resume Analysis Report" },
+
               ]}
             />
             <BentoGridItem 

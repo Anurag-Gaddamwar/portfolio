@@ -113,17 +113,16 @@ interface SkillCategories {
 }
 
 const skillCategories: SkillCategories = {
-  "Programming Languages": ["C", "Java"],
+  "Programming Languages": ["Java", "JavaScript",],
   "Database Management": ["SQL", "MongoDB"],
   "Frontend Technologies": [
     "HTML",
     "CSS",
-    "JavaScript",
     "React.js",
     "Tailwind CSS",
     "Next.js",
   ],
-  "Backend Technologies": ["Express.js", "Node.js"],
+  "Backend Technologies (Learning)": ["Express.js", "Node.js"],
   "Cloud Computing": ["AWS"],
   "Design Tools": [
     "Figma",
