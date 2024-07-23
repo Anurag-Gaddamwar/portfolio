@@ -25,7 +25,7 @@ export default function Home() {
 <div className="rounded-xl w-full sm:text-5xl tracking-widest font-mono text-4xl sm:h-32 z-10 items-center justify-center relative">
   <AuroraBackground>
     ANURAG GADDAMWAR
-    {typeof window !== 'undefined' && (
+    {/* {typeof window !== 'undefined' && (
       // eslint-disable-next-line @next/next/no-img-element
       <img 
         src="/AnuragPhoto.png" 
@@ -33,7 +33,7 @@ export default function Home() {
         className=" md :hidden lg:hidden block sm:hidden h-32 max-w-full object-cover absolute top-[5.19rem] transform -translate-y-1/2 right-4" 
         style={{ display: window.innerWidth <= 400 ? 'block' : 'none' }}
       />
-    )}
+    )} */}
   </AuroraBackground>
 </div>
 
